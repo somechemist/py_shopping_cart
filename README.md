@@ -1,8 +1,7 @@
 # py_shopping_cart
 This is a naive attempt to do a shopping cart app in Python 3
 ## TO RUN ON LINUX
-- `mkdir py_shopping_cart`
-- `git clone <URL for this repo>`
+- `git clone https://github.com/somechemist/py_shopping_cart.git`
 - `cd py_shopping_cart`
 - `chmod +x main.py`
 - `./main.py`
