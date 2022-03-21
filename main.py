@@ -21,6 +21,12 @@ class Product:
         self.price = price;
         self.quantity = quantity;
 
+#Shipping Class
+class Shipping:
+    full = 4.95
+    red = 2.95
+    free = 0
+
 # Populate the store
 product1 = Product("Red Flower", "RF1", 32.95, 0);
 product2 = Product("Green Flower", "GF1", 24.95, 0);
@@ -118,11 +124,11 @@ while (running==True):
                 total = round(total, 2);
 
                 if (total < 50):
-                    shipping = 4.95;
+                    shipping = Shipping.full;
                 elif (50 <= total < 90):
-                    shipping = 2.95;
+                    shipping = Shipping.red;
                 else:
-                    shipping = 0;
+                    shipping = Shipping.free;
 
                 grandTotal = total + shipping;
                 grandTotal = round(grandTotal, 2);
